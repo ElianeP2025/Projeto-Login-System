@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+    color: #abc;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(125deg, #0f2128, #213a42, #3c5064);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.register-wrapper {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.register_info{
+    max-width: 320px;
+}
+
+.register_info h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #f9fafb;
+}
+
+.register_info p {
+    font-size: 16px;
+    color: #cbd5f5;
+    margin-bottom: 24px;
+}
+
+.register_info span {
+    display: block;
+    color: #94a368;
+    margin-bottom: 10px;
+}
+
+.register_info a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.register_info a:hover {
+    text-decoration: underline;
+}
+
+.register_card {
+    background: rgba(10, 23, 42, 0.86);
+    backdrop-filter: blur(14px);
+    padding: 40px;
+    border-radius: 18px;
+    width: 360px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    border: 1px solid rgba(148,163,184,0.86);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #60a5fa;
+}
+
+.input-group input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    background-color: #020617;
+    color: #f1f5f9;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group input::placeholder{
+    color: #64748b;
+}
+
+.input-group input:focus{
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3)
+}
+
+button{
+    margin-top: 24px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38bdf8, #38bdf8, #2563eb);
+    color: #020617;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover{
+    transform: translate(-2px);
+    box-shadow: 0 12px 25px rgba(37,99,235,0.5);
+}

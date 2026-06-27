@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleDark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Login System - Logar</title>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Div Principal de Login usada no css -->
+        <!-- A Classe "login-container" é definida no arquivo style.css -->
+        <h1>Login</h1> <!-- Título da página de login -->
+        <p>Acesse sua conta:</p> <!-- Descrição da página de login -->
+        <form>
+            <div class="input-group">
+                <label for="email">Email:</label> <!-- Rótulo para o campo de usuário -->
+                <input id="email" type="email" placeholder="Digite seu Email" required> <!-- Campo de entrada para o nome de usuário -->
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha:</label> <!-- Rótulo para o campo de senha -->
+                <input id="senha" type="password" placeholder="Digite sua Senha" required> <!-- Campo de entrada para a senha -->
+            </div>
+            <button type="submit">Entrar</button> <!-- Botão de envio do formulário -->
+        </form>
+        <div class="footer">
+            <span>Não tem uma conta?</span> <!-- Link para a página de registro -->
+            <a href="./register.html">Criar conta</a> <!-- Link para a página de registro -->
+        </div>
+    </div>
+</body>
+</html>
