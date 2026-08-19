@@ -48,10 +48,13 @@ router.post("/login", async (req, res) => {
     const { email, senha } = req.body;
 
     // 1. Validação de presença primeiro
-    if (!email || !senha) {
+    if (!email & !senha) {
       return res.status(400).json({ message: "Preencha todos os campos." });
     }
 
+    if (!email) {
+      return res.status(400).json({ message: "Preencha o email." });
+    }
     const users = await fs.readJson(DB).catch(() => []);
 
     // 2. Busca do usuário
