@@ -1,7 +1,5 @@
-
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
-
     e.preventDefault();
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
